@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="argentina, aventura, paquetes, salidas, aventure, turismo, kayak, cicloturismo, multiaventura, escalada, rappel, trekking, ascenso, cumbre">
+    <meta name="description"
+        content="Argentina Aventura! Elige tu aventura y la fecha que quieras realizarlo! Te ofrecemos salidas de kayak, cicloturismo, multiaventura, trekking, escalada, ascensos, cumbres, entre otros.">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!--hoja de estilo -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- titulo -->
+    <title>Argentina Aventura - Paquetes de aventuras</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-4">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="Logo de Argentina Aventura"
+                    class="header__img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto p-12">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./calendario.html">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./paquetes.html">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- cuerpo de la pagina  -->
+    <!-- Paquetes -->
+    <main class="fondo__degrade">
+        <div class="text-center">
+            <h1 class="section-heading text-uppercase pt-4 pb-4"><strong>Paquetes de Aventuras</strong></h1>
+        </div>
+        <!-- Solapas por actividad  -->
+        <div class="card">
+            <div class="card-header card__header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav__link nav__link--cumbre active" id="home-tab" data-bs-toggle="tab" href="#cumbre" role="tab"
+                            aria-controls="home" aria-selected="true">Cumbres</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav__link nav__link--trekking" id="profile-tab" data-bs-toggle="tab" href="#trekking" role="tab"
+                            aria-controls="profile" aria-selected="false">Trekking</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav__link nav__link--escalada" id="profile-tab" data-bs-toggle="tab" href="#escalada" role="tab"
+                            aria-controls="profile" aria-selected="false">Escalada</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav__link nav__link--kayak" id="profile-tab" data-bs-toggle="tab" href="#kayak" role="tab"
+                            aria-controls="profile" aria-selected="false">Kayak</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav__link nav__link--cicloturismo" id="profile-tab" data-bs-toggle="tab" href="#cicloturismo" role="tab"
+                            aria-controls="profile" aria-selected="false">Cicloturismo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body card__body">
+                <div class="tab-content" id="myTabContent">
+                    <!-- Solapa CUMBRE -->
+                    <div class="tab-pane fade show card__body--cumbre active" id="cumbre" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="calendario">
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cumbre">MENDOZA
+                                            <br>
+                                            Vallecitos <span class="card__titulo__dia">(3 días)</span>
+                                        </div>
+                                        <picture>
+                                            <source media="(min-width: 400px) and (max-width: 767px)"
+                                                srcset="./img/calendario/5_800.jpg">
+                                            <img src="./img/calendario/5_400.jpg" class="card-img-top"
+                                                alt="Cumbre Cerro Adolfo Calle de 4296 metros en Vallecitos" title="Vallecitos" Loading="lazy">
+                                        </picture>
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Cerro Adolfo Calle - 4296 msnm </strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cumbre">Cerro
+                                            Adolfo Calle - 4296 msnm</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: MEDIA</p>
+                                            <p>Nos encontraremos en el Refugio Mausi a las 12am y subiremos hasta "Las
+                                                Veguitas Inferior" donde almorzaremos. El día 2 haremos un trekking hasta
+                                                "Veguita Superior". El día 3 haremos el ascenso al Cerro Adolfo Calle 4296 msnm y si el tiempo nos acopmaña haremos cumbre también en el cerro Stepanek 4180 msnm.
+                                            </p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cumbre">RIO NEGRO
+                                            <br> San
+                                            Carlos de Bariloche <span class="card__titulo__dia">(1 día)</span>
+                                        </div>
+                                        <img src="./img/calendario/6.jpg" class="card-img-top" alt="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Cerro Pico Turista - 2060 msnm</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cumbre">Cerro Pico
+                                            Turista - 2060 msnm</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: MEDIA</p>
+                                            <p>Nos encontraremos al inicio de la subida del Refugio Lopez, subiremos
+                                                hasta el Refugio donde almorzaremos. Luego subiremos al Co. Pico
+                                                Turista, y finalmente bajaremos hasta el lugar donde nos encontramos.
+                                            </p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cumbre">RIO
+                                            NEGRO
+                                            <br> San
+                                            Carlos de Bariloche <span class="card__titulo__dia">(2 días)</span>
+                                        </div>
+                                        <img src="./img/calendario/6.jpg" class="card-img-top" alt="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Cerro Pico Turista - 2060 msnm</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cumbre">Cerro
+                                            Pico
+                                            Turista - 2060 msnm</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: BAJA</p>
+                                            <p>Nos encontraremos al inicio de la subida del Refugio Lopez, subiremos
+                                                hasta el
+                                                Refugio donde haremos noche. Al siguiente día subiremos al Co. Pico
+                                                Turista, luego bajaremos hasta el Refugio donde almorzaremos y
+                                                seguiremos descendiendo hasta
+                                                el lugar donde nos encontramos.</p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Solapa TREKKING -->
+                    <div class="tab-pane fade card__body--trekking" id="trekking" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="calendario">
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--trekking">MENDOZA
+                                            <br>
+                                            Vallecitos <span class="card__titulo__dia">(2 días)</span>
+                                        </div>
+                                        <img src="./img/calendario/4.jpg" class="card-img-top" alt="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Trekking por Veguitas Inferior y Superior
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--trekking">Trekking
+                                            Vallecitos</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: BAJA</p>
+                                            <p>Nos encontraremos en el Refugio Mausi a las 12am y haremos un trekking
+                                                hasta Veguitas Inferior donde almorzaremos y pasaremos el día. El Día 2
+                                                haremos un trekking hasta Veguitas Superior donde almorzaremos y
+                                                pasaremos el día.</p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Solapa ESCALADA -->
+                    <div class="tab-pane fade card__body--escalada" id="escalada" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="calendario">
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--escalada">BUENOS
+                                            AIRES
+                                            <br>
+                                            Tandil <span class="card__titulo__dia">(2 días)</span>
+                                        </div>
+                                        <img src="./img/calendario/3.jpg" class="card-img-top" alt="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Escalada por diferentes sectores de Tandil.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--escalada">Escalada en
+                                            Tandil</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: BAJA</p>
+                                            <p>Nos encontraremos en las cabañas "Corales" a las 12am y partiremos hacia
+                                                el sector de escalada "La Cruz". El día 2 partiremos 10am de las cabañas
+                                                al sector "Pedrero".</p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Solapa KAYAK -->
+                    <div class="tab-pane fade card__body--kayak" id="kayak" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="calendario">
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--kayak">NEUQUEN <br>
+                                            San
+                                            Martin de los Andes <span class="card__titulo__dia">(1 día)</span> </div>
+                                        <img src="./img/calendario/1.jpg" class="card-img-top" alt="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Lago Lacar.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--kayak">Kayak por
+                                            Lago Lacar</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: BAJA</p>
+                                            <p>Saldremos a las 9am x la playita "La esquina" y navegaremos hasta el
+                                                camping "Escondido" donde almorzaremos. Luego regresaremos al mismo
+                                                lugar donde partimos.</p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Solapa CICLOTURISMO -->
+                    <div class="tab-pane fade card__body--cicloturismo" id="cicloturismo" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="calendario">
+                            <!--CARD-->
+                            <div class="card card__calendario card__girar">
+                                <div class="card__girar__caja">
+                                    <div class="card__girar__frente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cicloturismo">
+                                            BUENOS
+                                            AIRES
+                                            <br> Gral. Las Heras <span class="card__titulo__dia">(1 día)</span>
+                                        </div>
+                                        <img src="./img/calendario/2.jpg" class="card-img-top" alt="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Recorrido por Plomer, Villars y Lozano.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__girar__contrafrente">
+                                        <div class="card__titulo card__titulo--paquete card__titulo--cicloturismo">
+                                            4 pueblos de Gral. Las Heras</div>
+                                        <div class="card__body__detras">
+                                            <p>Dificulad: BAJA</p>
+                                            <p>Saldremos de la plaza de Gral. Las Heras a las 10am, pasaremos por Lozano
+                                                donde haremos una parada y continuaremos hasta Plomer donde
+                                                almorzaremos. Luego iremos a Villars donde hremos otra parada y
+                                                finalizaremos en la plaza de Gral. Las Heras de donde partimos</p>
+                                            <div class="card__body__detras__btn">
+                                                Por más info :
+                                                <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <!-- Pie de pagina  -->
+    <footer class="footer">
+        <div class="footer__redes">
+            <a class="redes__link mx-2" href="https://www.instagram.com/ArgentinaAventura.com.ar/" target="_blank"
+                alt="instagram" title="instagram"><i class="fab fa-instagram"></i></a>
+            <a class="redes__link mx-2" href="https://www.facebook.com/nancy.barea/" target="_blank" alt="facebook"
+                title="facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">Copyright ArgentinaAventura.com.ar ©2021</p>
+    </footer>
+    <!-- cdn bootstrap + js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

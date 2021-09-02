@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="argentina, aventura, adventure, turismo, kayak, cicloturismo, bici, trekking, cumbres, escalada, rappel, ascensos, salidas, multiaventura, guiadas, guia">
+    <meta name="description"
+        content="Argentina Aventura! un sitio donde podrás ver e inscribirte a nuestras salidas de aventuras como en kayak, trekking, escalada, cicloturismo, ascensos, cumbres, multiaventuras y mucho más.">
+    <meta name="author" content="Nancy Barea" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!--hoja de estilo -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- titulo -->
+    <title>Argentina Aventura - inicio</title>
+</head>
+
+<body class="fondo__degrade">
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-4">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="Logo de Argentina Aventura"
+                    class="header__img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto p-12">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link " href="./calendario.html">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./paquetes.html">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main__banner">
+        <div>
+            <h1 class="banner__tit banner__tit--principal">Argentina Aventura</h1>
+            <h2 class="banner__tit banner__tit--secundario">¡¡ Bienvenidos a La Aventura !!</h2>
+        </div>
+    </main>
+
+    <!-- Presentación 
+    <section>
+        <p> Queremos ofrecerles una variedad de salidas para que puedas elegir y disfrutar de la que más te guste</p>
+    </section>
+    -->
+
+    <!-- Calendario -->
+    <section>
+        <div class="text-center my-5">
+            <p class="section-subheading text-muted">Encontraste el sitio web que tanto buscabas!!! en nuestra web
+                encontrarás variedad de aventuras para que puedas elegir y sumarte! <br> Acá abajo te dejo las próximas
+                salidas que vamos a realizar, si quieres ver más ingresa a <a class="link__calendario"
+                    href="./calendario.html">Calendario</a>
+                <br> <strong>NOS VEMOS PRONTO !!</strong>
+            </p>
+        </div>
+        <!-- Calendario del mes actual  -->
+        <div class="card__tit__calen">
+            <h3>Calendario: <strong>OCTUBRE</strong> </h3>
+        </div>
+        <div class="card">
+            <div class="card-body card__body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="calendario">
+                            <!--CARD-->
+                            <div class="card card__calendario">
+                                <div class="card__titulo card__titulo--calendario card__titulo--kayak">Kayak</div>
+                                <picture>
+                                    <source media="(min-width: 400px) and (max-width: 767px)"
+                                        srcset="./img/calendario/1_800.jpg">
+                                    <img src="./img/calendario/1_400.jpg" class="card-img-top"
+                                        alt="Kayakeando en el Lago Lacar" title="Lago Lacar" Loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay">
+                                    <p class="card__fecha">Día 5</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Neuquen - San Martin de los Andes</strong></p>
+                                    <p class="card-text">Salida de kayak de 10hs a 17hs en Lago Lacar.</p>
+                                    <div class="card__body__detras__btn">
+                                        Por más info :
+                                        <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario">
+                                <div class="card__titulo card__titulo--calendario card__titulo--cicloturismo">
+                                    Cicloturismo</div>
+                                <picture>
+                                    <source media="(min-width: 400px) and (max-width: 767px)"
+                                        srcset="./img/calendario/2_800.jpg">
+                                    <img src="./img/calendario/2_400.jpg" class="card-img-top"
+                                        alt="cicloturismo en Gral Las Heras" title="Gral. Las Heras" Loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay">
+                                    <p class="card__fecha">Día 7</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Buenos Aires - Gral Las Heras</strong></p>
+                                    <p class="card-text">Salida de cicloturismo recorriendo los
+                                        pueblos Plomer, Villars y Lozano.</p>
+                                    <div class="card__body__detras__btn">
+                                        Por más info :
+                                        <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario">
+                                <div class="card__titulo card__titulo--calendario card__titulo--escalada">Escalada</div>
+                                <picture>
+                                    <source media="(min-width: 400px) and (max-width: 767px)"
+                                        srcset="./img/calendario/3_800.jpg">
+                                    <img src="./img/calendario/3_400.jpg" class="card-img-top" alt="Escalada en Tandil"
+                                        title="Tandil" Loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay">
+                                    <p class="card__fecha">Día 8 y 9</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Buenos Aires - Tandil</strong></p>
+                                    <p class="card-text">Venite con nosotros y te llevamos a escalar a diferentes
+                                        sectores de Tandil.</p>
+                                    <div class="card__body__detras__btn">
+                                        Por más info :
+                                        <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario">
+                                <div class="card__titulo card__titulo--calendario card__titulo--trekking">trekking</div>
+                                <picture>
+                                    <source media="(min-width: 400px) and (max-width: 767px)"
+                                        srcset="./img/calendario/4_800.jpg">
+                                    <img src="./img/calendario/4_400.jpg" class="card-img-top"
+                                        alt="Trekking por Vallecitos" title="Vallecitos" Loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay">
+                                    <p class="card__fecha">Día 10</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Mendoza - Vallecitos</strong></p>
+                                    <p class="card-text">Trekking por Veguitas Inferior y Veguitas Superior.</p>
+                                    <div class="card__body__detras__btn">
+                                        Por más info :
+                                        <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario">
+                                <div class="card__titulo card__titulo--calendario card__titulo--cumbre">Cumbre Frankee
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 400px) and (max-width: 767px)"
+                                        srcset="./img/calendario/5_800.jpg">
+                                    <img src="./img/calendario/5_400.jpg" class="card-img-top"
+                                        alt="Cumbre Cerro Adolfo Calle de 4296 metros en Vallecitos" title="Vallecitos" Loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay">
+                                    <p class="card__fecha">Día 11 y 12</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Mendoza - Vallecitos</strong></p>
+                                    <p class="card-text">Sumate hacer un 4000! Ascenso al cerro Adolfo Calle de 4296
+                                        msnm
+                                        metros de altura.</p>
+                                    <div class="card__body__detras__btn">
+                                        Por más info :
+                                        <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="card card__calendario">
+                                <div class="card__titulo card__titulo--calendario card__titulo--cumbre">Cumbre Pico
+                                    Turista</div>
+                                <picture>
+                                    <source media="(min-width: 400px) and (max-width: 767px)"
+                                        srcset="./img/calendario/6_800.jpg">
+                                    <img src="./img/calendario/6_400.jpg" class="card-img-top"
+                                        alt="Trekking por San Carlos de Bariloche" title="San Carlos de Bariloche" Loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay">
+                                    <p class="card__fecha">Día 25</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Rio Negro - San Carlos de Bariloche</strong></p>
+                                    <p class="card-text">Te invitamos a ver una vista increible! ascenso al cerro PICO
+                                        TURISTA.</p>
+                                    <div class="card__body__detras__btn">
+                                        Por más info :
+                                        <a href="./contacto.html" target="_blank">Contáctanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Pie de pagina  -->
+    <footer class="footer">
+        <div class="footer__redes">
+            <a class="redes__link mx-2" href="https://www.instagram.com/ArgentinaAventura.com.ar/" target="_blank"
+                alt="instagram" title="instagram"><i class="fab fa-instagram"></i></a>
+            <a class="redes__link mx-2" href="https://www.facebook.com/nancy.barea/" target="_blank" alt="facebook"
+                title="facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">Copyright ArgentinaAventura.com.ar ©2021</p>
+    </footer>
+
+    <!-- bootstrap core js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
