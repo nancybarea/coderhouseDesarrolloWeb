@@ -259,6 +259,10 @@ header {
   padding: 0px;
 }
 
+.card-body {
+  z-index: 20;
+}
+
 .card__fecha {
   background-color: black;
   color: white;
