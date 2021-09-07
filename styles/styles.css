@@ -58,20 +58,40 @@ body {
   background-color: #e4f0f9;
 }
 
+.color__fondo--kayak {
+  background-color: #97c5e7;
+}
+
 .card__body--cicloturismo {
   background-color: #fbfbe5;
+}
+
+.color__fondo--cicloturismo {
+  background-color: #ced11f;
 }
 
 .card__body--escalada {
   background-color: #f9e0d4;
 }
 
+.color__fondo--escalada {
+  background-color: #bb4e1b;
+}
+
 .card__body--trekking {
   background-color: #f2fef4;
 }
 
+.color__fondo--trekking {
+  background-color: #0a811a;
+}
+
 .card__body--cumbre {
   background-color: #e5ebfd;
+}
+
+.color__fondo--cumbre {
+  background-color: #09287e;
 }
 
 header {
@@ -236,6 +256,7 @@ header {
 
 .card__body {
   background-color: rgba(167, 163, 163, 0.5);
+  padding: 0px;
 }
 
 .card__fecha {
@@ -282,11 +303,11 @@ header {
 .card__body__detras__btn {
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 .card__body__detras__btn a {
   text-decoration: none;
   color: white;
-  background-color: black;
   padding: 1rem;
   border-radius: 5px;
 }
