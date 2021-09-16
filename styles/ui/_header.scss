@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.header__img {
+  width: 150px;
+  //background-color:white;
+  //border-radius:10px;
+}
+
+//$colorPrimario: rgba(255, 255, 255);
+// color: lighten($color: $colorPrimario, $amount:20%); color y cantidad de cuanto se va aclarecer el color 
+// color: darken($color: $colorSecundario, $amount:20%)

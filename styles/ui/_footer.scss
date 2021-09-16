@@ -1,0 +1,23 @@
+.footer {
+    
+    background-color: $color_fondo_footer;
+
+    .footer__redes{
+        text-align: right;
+        width: 100%;
+        padding: 1rem;
+        background-color: lighten($color: $color_fondo_footer, $amount: 35%);
+
+        .redes__link {
+            color: white;
+        }
+
+    }
+
+    .copyright {
+        text-align: center;
+        color: white;
+        font-size: 1.4rem;
+        padding: 1rem 0;       
+    }
+}

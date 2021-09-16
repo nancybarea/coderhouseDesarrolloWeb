@@ -1,0 +1,42 @@
+.main__contacto {
+  text-align: center;
+}
+
+.contacto {
+  @include flex (column, center, center, wrap );
+  padding: 1rem;
+}
+
+.contacto__formulario {
+  input {
+    padding: 0.5rem;
+  }
+
+  textarea {
+    padding: 0.5rem;
+    resize: none; /* elimina el poder modificar el tamaño del textarea*/
+    margin-top: 1rem;
+  }
+}
+
+.contacto__medios {
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.contacto__medios__imagen {
+  width: 10%;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+@media (min-width: 767px) {
+  .contacto {
+    @include flex (row, space-evenly, flex-start, wrap );
+  }
+
+  .contacto__medios__imagen {
+    margin-left: 0.3rem;
+  }
+
+}

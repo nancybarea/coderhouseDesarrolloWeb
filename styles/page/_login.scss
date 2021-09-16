@@ -1,0 +1,51 @@
+.main__login {
+  text-align: center;
+
+  fieldset {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+    border: 0px;
+    padding: 2rem;
+    width: 80%;
+    display: inline-block;
+  }
+}
+
+.login__formulario {
+  input {
+    border: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.section__login {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 426px) {
+  .main__login {
+    fieldset {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__login {
+    fieldset {
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+//VARIABLES
+
+//colores 
+$color_fondo_degrade: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(204,204,204,1) 17%, rgba(255,255,255,1) 100%);
+$color_fondo_card_fecha: black;
+$color_card_fecha:white;
+$color_fondo_footer:black;
+$color_fondo_calenadrio_header: rgb(167, 163, 163);
+$color_fondo_calenadrio_body: rgba(167, 163, 163, 50%);
+$color_kayak: #97c5e7;
+$color_cicloturismo:  #ced11f;
+$color_escalada: #bb4e1b;
+$color_trekking:#0a811a;
+$color_cumbre: #09287e;
+
+//fuentes
+$fuente_texto: Arial, Helvetica, sans-serif;
+$fuente_tit_banner:"Indie Flower", cursive;
+
+
+//RESET
+* {
+    margin:0;
+    padding:0;
+  }
+  
+html {
+  font-size: 62.5%; /* medida ajustada para luego usar 1rem = 10px */
+}
+
+
+//INICIO AJUSTES GENERALES 
+body{
+  font-family: $fuente_texto;
+  font-size: 1.6rem;
+}
+
+.fondo__degrade {
+  background: $color_fondo_degrade;
+}
+// INICIO AJUSTES GENERALES 
+
+
+// INICIO OPERACIONES
+
+//titulo de las card del Calendario
+$actividades: ( /*declaro el mapa*/
+        kayak: $color_kayak,
+        cicloturismo: $color_cicloturismo,
+        escalada: $color_escalada,
+        trekking: $color_trekking,
+        cumbre: $color_cumbre
+);
+ 
+//card__titulo--actividad
+@each $actividad, $color in $actividades {
+  .card__titulo--#{$actividad} {
+
+    @extend .card__titulo;
+    background-color: $color;
+    letter-spacing: 1px;
+
+    @if ($actividad == kayak or $actividad == cicloturismo) {
+      color: black;
+      text-shadow: 2px 2px white;
+      
+    }@else {
+      color: white;
+      text-shadow: 2px 2px black;
+    }
+  }
+}
+
+//card__body--actividad
+@each $actividad, $color in $actividades {
+  .card__body--#{$actividad} {
+    @if ($actividad == cumbre) {
+      background-color:lighten($color: $color_cumbre, $amount: 68%);      
+    } @else if ($actividad == trekking) {
+      background-color:lighten($color: $color_trekking, $amount: 70%);      
+    } @else if ($actividad == escalada) {
+      background-color:lighten($color: $color_escalada, $amount: 48.5%);      
+    } @else if ($actividad == kayak) {
+      background-color:lighten($color: $color_kayak, $amount: 18.5%);     
+    } @else if ($actividad == cicloturismo) {
+      background-color:lighten($color: $color_cicloturismo, $amount: 47%);     
+    } @else {
+      background-color: $color_fondo_calenadrio_body;
+    }
+  }
+
+  .color__fondo--#{$actividad} {
+    @if ($actividad == cumbre) {
+      background-color: $color_cumbre;      
+    } @else if ($actividad == trekking) {
+      background-color: $color_trekking;      
+    } @else if ($actividad == escalada) {
+      background-color: $color_escalada;      
+    } @else if ($actividad == kayak) {
+      background-color: $color_kayak;     
+    } @else if ($actividad == cicloturismo) {
+      background-color:$color_cicloturismo;     
+    } @else {
+      background-color: $color_fondo_calenadrio_body;
+    }
+  }
+}
+
+//mixin
+@mixin flex ($direccion, $justify, $align, $wrap) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// FIN OPERACIONES
