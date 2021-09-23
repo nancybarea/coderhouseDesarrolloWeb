@@ -4,16 +4,26 @@
   height: 450px;
   @include flex (row, left, center, wrap );
   padding-left: 2rem;
+  background-position: right;
+  
 }
 
 .banner__tit {
-  color: black;
+  color: white;
   font-style: italic;
   font-family: $fuente_tit_banner;
   font-weight: 700; /* negrita */
   text-transform: capitalize;
   //text-decoration: none;
   word-spacing: 1rem;
+  filter: drop-shadow(1px 1px 1.3px black);
+}
+
+@media (min-width: 426px) {
+  .banner__tit {
+    color: black;
+    filter: drop-shadow(1px 1px 1.3px white);
+  }
 }
 
 .banner__tit--principal {
@@ -25,19 +35,31 @@
   padding-left: 0rem;
 }
 
-
-@media (min-width: 769px) {
+@media (min-width: 620px) {
   .banner__tit--principal {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .banner__tit--secundario {
-    font-size: 6rem;
-    padding-left: 5rem;
+    font-size: 2rem;
   }
 
   .main__banner {
-    padding-left: 4.5rem;
+    padding-left: 1.3rem;
+    height: 620px;
+  }
+}
+
+@media (min-width: 769px) {
+  .banner__tit--principal {
+    font-size: 5rem;
+  }
+
+  .banner__tit--secundario {
+    font-size: 3rem;
+  }
+
+  .main__banner {
     height: 620px;
   }
 }
