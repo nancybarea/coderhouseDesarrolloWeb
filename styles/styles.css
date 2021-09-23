@@ -437,12 +437,31 @@ header {
 
 .contacto__formulario input {
   padding: 0.5rem;
+  border-radius: 5px;
+  border: unset;
+}
+.contacto__formulario select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: unset;
 }
 .contacto__formulario textarea {
   padding: 0.5rem;
   resize: none;
   /* elimina el poder modificar el tamaño del textarea*/
   margin-top: 1rem;
+  border-radius: 5px;
+  border: unset;
+}
+.contacto__formulario .formulario__btn {
+  border-radius: 5px;
+  border: unset;
+  background-color: black;
+  color: white;
+}
+.contacto__formulario .formulario__btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .contacto__medios {

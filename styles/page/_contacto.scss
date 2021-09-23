@@ -10,13 +10,36 @@
 .contacto__formulario {
   input {
     padding: 0.5rem;
+    border-radius: 5px; 
+    border: unset;
+  }
+
+  select {
+    padding: 0.5rem;
+    border-radius: 5px; 
+    border: unset;
   }
 
   textarea {
     padding: 0.5rem;
     resize: none; /* elimina el poder modificar el tamaño del textarea*/
     margin-top: 1rem;
+    border-radius: 5px; 
+    border: unset;
   }
+
+  .formulario__btn {
+    border-radius: 5px; 
+    border: unset;
+    background-color: black;
+    color: white;
+  }
+
+  .formulario__btn:hover {
+    background-color: white;
+    color: black;
+  }
+
 }
 
 .contacto__medios {
