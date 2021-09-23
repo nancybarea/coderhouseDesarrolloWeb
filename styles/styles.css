@@ -318,6 +318,10 @@ header {
   padding: 1rem;
   border-radius: 5px;
 }
+.card__body__detras__btn a:hover {
+  background-color: black;
+  color: white;
+}
 
 .nav__link {
   display: block;
