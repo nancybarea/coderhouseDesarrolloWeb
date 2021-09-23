@@ -62,11 +62,13 @@
   text-decoration: none;
   color: black;
   font-weight: 700;
+  padding: 0 5px;
 
   &:hover {
     background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 5px;
+    border-radius: 5px;
   }
 }
 
