@@ -102,8 +102,8 @@ header {
 }
 
 .header__img {
-  width: 150px;
-  filter: drop-shadow(1px 1px 1.3px white);
+  width: 180px;
+  filter: drop-shadow(1px 1px 1.3px #093864);
 }
 
 .footer {
