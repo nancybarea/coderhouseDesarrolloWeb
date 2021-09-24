@@ -496,6 +496,14 @@ header {
   text-align: left;
   margin-top: 4rem;
 }
+.contacto__medios a {
+  text-decoration: none;
+  color: black;
+}
+.contacto__medios a:hover {
+  color: white;
+  background-color: black;
+}
 
 .contacto__medios__imagen {
   width: 10%;
