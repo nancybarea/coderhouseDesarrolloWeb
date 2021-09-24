@@ -94,6 +94,107 @@ body {
   background-color: #09287e;
 }
 
+.card__tablero {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 750px) {
+  .card__tablero {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+.card__individual {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.card__individual .card__titulo, .card__individual .card__titulo--kayak, .card__individual .card__titulo--cicloturismo, .card__individual .card__titulo--escalada, .card__individual .card__titulo--trekking, .card__individual .card__titulo--cumbre {
+  border-style: none;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+.card__individual .card__titulo--calendario {
+  text-align: right;
+}
+.card__individual .card__titulo--paquete {
+  text-align: center;
+}
+.card__individual .card__fecha {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-left: -2rem;
+  border-radius: 5px;
+}
+.card__individual .card__body__btn {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.card__individual .card__body__btn a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.card__individual .card__body__btn a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 767px) {
+  .card__individual {
+    width: 46%;
+    margin: 1rem;
+  }
+}
+@media (min-width: 1023px) {
+  .card__individual {
+    width: 31%;
+    margin: 1rem;
+  }
+}
+@media (min-width: 1439px) {
+  .card__individual {
+    width: 23%;
+    margin: 1rem;
+  }
+}
+.card__header {
+  background-color: #a7a3a3;
+}
+
+.card__body {
+  background-color: rgba(167, 163, 163, 0.5);
+  padding: 0px;
+}
+
+.card-body {
+  z-index: 20;
+}
+
+.modal__titulo {
+  font-size: 1.8rem;
+}
+
+.modal__carousel {
+  width: 330px;
+}
+
+@media (min-width: 750px) {
+  .modal__carousel {
+    width: 500px;
+  }
+}
 header {
   display: flex;
   flex-flow: row wrap;
@@ -137,8 +238,7 @@ header {
   padding-left: 2rem;
   background-position: right;
 }
-
-.banner__tit {
+.main__banner .banner__tit {
   color: white;
   font-style: italic;
   font-family: "Indie Flower", cursive;
@@ -148,60 +248,52 @@ header {
   word-spacing: 1rem;
   filter: drop-shadow(1px 1px 1.3px black);
 }
-
-@media (min-width: 426px) {
-  .banner__tit {
-    color: black;
-    filter: drop-shadow(1px 1px 1.3px white);
-  }
-}
-.banner__tit--principal {
+.main__banner .banner__tit--principal {
   font-size: 3.5rem;
 }
-
-.banner__tit--secundario {
+.main__banner .banner__tit--secundario {
   font-size: 1.8rem;
   padding-left: 0rem;
 }
 
+@media (min-width: 426px) {
+  .main__banner .banner__tit {
+    color: black;
+    filter: drop-shadow(1px 1px 1.3px white);
+  }
+}
 @media (min-width: 620px) {
-  .banner__tit--principal {
-    font-size: 4rem;
-  }
-
-  .banner__tit--secundario {
-    font-size: 2rem;
-  }
-
   .main__banner {
     padding-left: 1.3rem;
     height: 620px;
   }
+  .main__banner .banner__tit--principal {
+    font-size: 4rem;
+  }
+  .main__banner .banner__tit--secundario {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 769px) {
-  .banner__tit--principal {
-    font-size: 5rem;
-  }
-
-  .banner__tit--secundario {
-    font-size: 3rem;
-  }
-
   .main__banner {
     height: 620px;
   }
+  .main__banner .banner__tit--principal {
+    font-size: 5rem;
+  }
+  .main__banner .banner__tit--secundario {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1023px) {
-  .banner__tit--principal {
-    font-size: 8.2rem;
-  }
-
-  .banner__tit--secundario {
-    font-size: 4.2rem;
+  .main__banner {
     padding-left: 4rem;
   }
-
-  .main__banner {
+  .main__banner .banner__tit--principal {
+    font-size: 8.2rem;
+  }
+  .main__banner .banner__tit--secundario {
+    font-size: 4.2rem;
     padding-left: 4rem;
   }
 }
@@ -233,91 +325,6 @@ header {
   color: black;
 }
 
-.calendario {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-@media (min-width: 750px) {
-  .calendario {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-.card__calendario {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 767px) {
-  .card__calendario {
-    width: 46%;
-    margin: 1rem;
-  }
-}
-@media (min-width: 1023px) {
-  .card__calendario {
-    width: 31%;
-    margin: 1rem;
-  }
-}
-@media (min-width: 1439px) {
-  .card__calendario {
-    width: 23%;
-    margin: 1rem;
-  }
-}
-.card__header {
-  background-color: #a7a3a3;
-}
-
-.card__body {
-  background-color: rgba(167, 163, 163, 0.5);
-  padding: 0px;
-}
-
-.card-body {
-  z-index: 20;
-}
-
-.card__fecha {
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin-left: -2rem;
-  border-radius: 5px;
-}
-
-.card__titulo, .card__titulo--kayak, .card__titulo--cicloturismo, .card__titulo--escalada, .card__titulo--trekking, .card__titulo--cumbre {
-  border-style: none;
-  padding-right: 1rem;
-  font-weight: bold;
-}
-
-.card__titulo--calendario {
-  text-align: right;
-}
-
-.main__paquetes {
-  text-align: center;
-}
-
-.paquetes__img {
-  height: 200px;
-}
-
-.card__titulo--paquete {
-  text-align: center;
-}
-
 .card__titulo__dia {
   text-shadow: 0px 0px white;
   font-weight: 400;
@@ -326,22 +333,6 @@ header {
 .card__body__detras {
   text-align: left;
   padding: 1rem;
-}
-
-.card__body__detras__btn {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-.card__body__detras__btn a {
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-  border-radius: 5px;
-}
-.card__body__detras__btn a:hover {
-  background-color: black;
-  color: white;
 }
 
 .nav__link {
@@ -357,7 +348,8 @@ header {
     transition: none;
   }
 }
-.nav__link:hover, .nav__link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: black;
   background-color: #cccccc;
   font-weight: 700;
@@ -370,24 +362,29 @@ header {
   font-size: large;
 }
 
-.nav__link--cumbre:hover, .nav__link--cumbre:focus {
+.nav__link--cumbre:hover,
+.nav__link--cumbre:focus {
   background-color: #09287e;
   color: white;
 }
 
-.nav__link--trekking:hover, .nav__link--trekking:focus {
+.nav__link--trekking:hover,
+.nav__link--trekking:focus {
   background-color: #0a811a;
 }
 
-.nav__link--escalada:hover, .nav__link--escalada:focus {
+.nav__link--escalada:hover,
+.nav__link--escalada:focus {
   background-color: #bb4e1b;
 }
 
-.nav__link--kayak:hover, .nav__link--kayak:focus {
+.nav__link--kayak:hover,
+.nav__link--kayak:focus {
   background-color: #97c5e7;
 }
 
-.nav__link--cicloturismo:hover, .nav__link--cicloturismo:focus {
+.nav__link--cicloturismo:hover,
+.nav__link--cicloturismo:focus {
   background-color: #ced11f;
 }
 
@@ -412,7 +409,8 @@ header {
   transform: rotateY(180deg);
 }
 
-.card__girar__frente, .card__girar__contrafrente {
+.card__girar__frente,
+.card__girar__contrafrente {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -450,10 +448,6 @@ header {
   margin-bottom: 0;
 }
 
-.main__contacto {
-  text-align: center;
-}
-
 .contacto {
   display: flex;
   flex-direction: column;
@@ -462,18 +456,17 @@ header {
   flex-wrap: wrap;
   padding: 1rem;
 }
-
-.contacto__formulario input {
+.contacto .contacto__formulario input {
   padding: 0.5rem;
   border-radius: 5px;
   border: unset;
 }
-.contacto__formulario select {
+.contacto .contacto__formulario select {
   padding: 0.5rem;
   border-radius: 5px;
   border: unset;
 }
-.contacto__formulario textarea {
+.contacto .contacto__formulario textarea {
   padding: 0.5rem;
   resize: none;
   /* elimina el poder modificar el tamaño del textarea*/
@@ -481,31 +474,29 @@ header {
   border-radius: 5px;
   border: unset;
 }
-.contacto__formulario .formulario__btn {
+.contacto .contacto__formulario .formulario__btn {
   border-radius: 5px;
   border: unset;
   background-color: black;
   color: white;
 }
-.contacto__formulario .formulario__btn:hover {
+.contacto .contacto__formulario .formulario__btn:hover {
   background-color: white;
   color: black;
 }
-
-.contacto__medios {
+.contacto .contacto__medios {
   text-align: left;
   margin-top: 4rem;
 }
-.contacto__medios a {
+.contacto .contacto__medios a {
   text-decoration: none;
   color: black;
 }
-.contacto__medios a:hover {
+.contacto .contacto__medios a:hover {
   color: white;
   background-color: black;
 }
-
-.contacto__medios__imagen {
+.contacto .contacto__medios .contacto__medios__imagen {
   width: 10%;
   margin-bottom: 1rem;
   margin-left: 3rem;
@@ -519,13 +510,13 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
   }
-
-  .contacto__medios__imagen {
+  .contacto .contacto__medios__imagen {
     margin-left: 0.3rem;
   }
 }
 .main__login {
   text-align: center;
+  padding-bottom: 3rem;
 }
 .main__login fieldset {
   background-color: rgba(0, 0, 0, 0.25);
@@ -537,38 +528,27 @@ header {
   width: 80%;
   display: inline-block;
 }
-
-.login__formulario input {
+.main__login label {
+  display: block;
+}
+.main__login input {
   border: none;
   border-radius: 5px;
 }
-.login__formulario label {
-  display: block;
-}
-.login__formulario a {
-  display: block;
-  text-decoration: none;
-  color: black;
-}
-
-.login__formulario__btn {
+.main__login .login__btn {
   background-color: black;
   color: white;
 }
-.login__formulario__btn:hover {
+.main__login .login__btn:hover {
   background-color: white;
   color: black;
 }
-
-.section__login {
-  text-align: center;
-  padding-bottom: 3rem;
-}
-.section__login a {
+.main__login a {
   text-decoration: none;
   color: black;
+  display: block;
 }
-.section__login a:hover {
+.main__login a:hover {
   font-weight: 700;
 }
 
@@ -796,47 +776,5 @@ body {
   }
   100% {
     transform: translate3d(0, 0, 0);
-  }
-}
-.solapa {
-  margin: 2rem;
-}
-
-.solapa__titulo {
-  text-decoration: underline;
-  font-size: 1.8rem;
-}
-
-.modal__titulo {
-  font-size: 1.8rem;
-}
-
-.modal__carousel {
-  width: 330px;
-}
-
-.solapa--fotos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.solapa--fotos .solapa__carousel {
-  width: 500px;
-  margin-right: 2rem;
-}
-
-@media (min-width: 750px) {
-  .solapa--fotos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .modal__carousel {
-    width: 500px;
   }
 }/*# sourceMappingURL=styles.css.map */

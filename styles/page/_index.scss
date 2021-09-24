@@ -2,81 +2,81 @@
   background-image: url("../img/banner_escalada.jpg");
   background-size: cover;
   height: 450px;
-  @include flex (row, left, center, wrap );
+  @include flex(row, left, center, wrap);
   padding-left: 2rem;
   background-position: right;
-  
-}
 
-.banner__tit {
-  color: white;
-  font-style: italic;
-  font-family: $fuente_tit_banner;
-  font-weight: 700; /* negrita */
-  text-transform: capitalize;
-  //text-decoration: none;
-  word-spacing: 1rem;
-  filter: drop-shadow(1px 1px 1.3px black);
-}
-
-@media (min-width: 426px) {
   .banner__tit {
-    color: black;
-    filter: drop-shadow(1px 1px 1.3px white);
+    color: white;
+    font-style: italic;
+    font-family: $fuente_tit_banner;
+    font-weight: 700; /* negrita */
+    text-transform: capitalize;
+    //text-decoration: none;
+    word-spacing: 1rem;
+    filter: drop-shadow(1px 1px 1.3px black);
   }
-}
 
-.banner__tit--principal {
-  font-size: 3.5rem;
-}
-
-.banner__tit--secundario {
-  font-size: 1.8rem;
-  padding-left: 0rem;
-}
-
-@media (min-width: 620px) {
   .banner__tit--principal {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .banner__tit--secundario {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    padding-left: 0rem;
   }
+}
 
+@media (min-width: 426px) {
+  .main__banner {
+    .banner__tit {
+      color: black;
+      filter: drop-shadow(1px 1px 1.3px white);
+    }
+  }
+}
+
+@media (min-width: 620px) {
   .main__banner {
     padding-left: 1.3rem;
     height: 620px;
+
+    .banner__tit--principal {
+      font-size: 4rem;
+    }
+
+    .banner__tit--secundario {
+      font-size: 2rem;
+    }
   }
 }
 
 @media (min-width: 769px) {
-  .banner__tit--principal {
-    font-size: 5rem;
-  }
-
-  .banner__tit--secundario {
-    font-size: 3rem;
-  }
-
   .main__banner {
     height: 620px;
+
+    .banner__tit--principal {
+      font-size: 5rem;
+    }
+
+    .banner__tit--secundario {
+      font-size: 3rem;
+    }
   }
 }
 
 @media (min-width: 1023px) {
-  .banner__tit--principal {
-    font-size: 8.2rem;
-  }
-
-  .banner__tit--secundario {
-    font-size: 4.2rem;
-    padding-left: 4rem;
-  }
-
   .main__banner {
     padding-left: 4rem;
-    //height: 620px;
+
+    .banner__tit--principal {
+      font-size: 8.2rem;
+    }
+
+    .banner__tit--secundario {
+      font-size: 4.2rem;
+      padding-left: 4rem;
+    }
   }
 }
 
@@ -99,7 +99,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
-  
+
   h3 {
     color: black;
   }

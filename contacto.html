@@ -50,8 +50,8 @@
     </header>
 
     <!-- cuerpo de la pagina  -->
-    <main class="main__contacto fondo__degrade py-4">
-        <h1 class="section-heading text-uppercase"><strong>Contacto</strong></h1>
+    <main class="fondo__degrade py-4">
+        <h1 class="section-heading text-uppercase text-center"><strong>Contacto</strong></h1>
         <div class="contacto">
             <div class="contacto__formulario">
                 <form action="mailto:nancybarea@gmail.com"" method=" POST" enctype="text/plain">
@@ -71,14 +71,14 @@
                             <div class="col-8"><input type="email" name="email" id="email"
                                     placeholder="tuemail@mail.com" required></div>
                         </div>
-                        <div class="row pb-3">
+                        <div class="row pb-5">
                             <div class="col-4 text-end"><label for="telefono">Teléfono : </label></div>
                             <div class="col-8"><input type="tel" name="telefono" id="telefono"
                                     placeholder="Ingrese su Teléfono"></div>
                         </div>
                         <div class="row pt-2">
-                            <div class="col-5 text-end"><label for="tipoConsulta">Realizar un/a : </label></div>
-                            <div class="col-7 text-start">
+                            <div class="col-12">
+                                <label for="tipoConsulta">Realizar un/a : </label>
                                 <select name="tipoConsulta" id="tipoConsulta">
                                     <option value="consulta" selected>Consulta</option>
                                     <option value="sugerencias">Sugerencia</option>

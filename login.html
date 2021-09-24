@@ -53,22 +53,20 @@
         <h1 class="section-heading text-uppercase pt-4 pb-4"><strong>Iniciar Sesión</strong></h1>
         <p>¡¡ PROXIMAMENTE UNA SESIÓN EXCLUSIVA PARA LOS CLIENTES !!</p>
         <fieldset>
-            <form action="login.html" method="post" enctype="text/plain" class="login__formulario">
-                <i class="fas fa-user"></i> Usuario : <input type="text" class="mb-4 p-1" name="usuario" id="usuario" placeholder="Ingrese su usuario">
+            <form action="login.html" method="post" enctype="text/plain">
+                <i class="fas fa-user"></i> 
+                <label for="usuario">Usuario : </label> 
+                <input type="text" class="mb-4 p-1" name="usuario" id="usuario" placeholder="Ingrese su usuario">
                 <br>
-                <i class="fas fa-key"></i> Contraseña : <input type="text" class="mb-4 p-1" name="clave" id="clave" placeholder="Ingrese su contraseña">
+                
+                <i class="fas fa-key"></i> <label for="clave">Contraseña : </label><input type="text" class="mb-4 p-1" name="clave" id="clave" placeholder="Ingrese su contraseña">
                 <br>
-                <input type="submit" class="login__formulario__btn mt-4 p-2" name="Aceptar" value="Aceptar">
+                <input type="submit" class="login__btn mt-4 p-2" name="Aceptar" value="Aceptar">
             </form>
         </fieldset>
-    </main>
-
-    <section class="section__login fondo__degrade">
         <a href="login.html">¿Olvidaste tu contraseña?</a>
-        <br>
         <a href="login.html">Registrarse</a>
-    </section>
-
+    </main>
 
     <!-- Pie de pagina  -->
     <footer class="footer">

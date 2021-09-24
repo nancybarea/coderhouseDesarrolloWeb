@@ -1,5 +1,6 @@
 .main__login {
   text-align: center;
+  padding-bottom: 3rem;
 
   fieldset {
     background-color: rgba(0, 0, 0, 0.25);
@@ -11,50 +12,42 @@
     width: 80%;
     display: inline-block;
   }
-}
-
-.login__formulario {
-  input {
-    border: none;
-    border-radius: 5px;
-  }
 
   label {
     display: block;
   }
 
+  input {
+    border: none;
+    border-radius: 5px;
+  }
+ 
+    
+  .login__btn{
+    background-color: black;
+    color: white;
+  
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  
+  }
+
   a {
+    text-decoration: none;
+    color: black;
     display: block;
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.login__formulario__btn{
-  background-color: black;
-  color: white;
-
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-
-}
-
-.section__login {
-  text-align: center;
-  padding-bottom: 3rem;
-
-  a {
-    text-decoration: none;
-    color: black;
   
     &:hover {
       font-weight: 700;
     }
   }
+   
 
 }
+
+
 
 @media (min-width: 426px) {
   .main__login {

@@ -1,5 +1,7 @@
 
 @import "./generales/base"; 
+@import "./generales/card"; //se usa en index, calendario y paquetes. 
+@import "./generales/modal"; //se usa en index, calendario y proximamente en paquetes. 
 
 @import "./ui/header"; 
 @import "./ui/footer";
@@ -12,6 +14,6 @@
 @import "./page/login";
 @import "./page/404";
 
-@import "./page/page_calendario"
+
 
 

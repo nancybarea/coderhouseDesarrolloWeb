@@ -1,0 +1,92 @@
+.card__tablero {
+  @include flex(column, stretch, flex-start, wrap);
+}
+
+@media (min-width: 750px) {
+  .card__tablero {
+    @include flex(row, stretch, flex-start, wrap);
+  }
+}
+
+.card__individual {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  .card__titulo {
+    border-style: none;
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+
+  .card__titulo--calendario {
+    text-align: right;
+  }
+
+  .card__titulo--paquete {
+    text-align: center;
+  }
+
+  .card__fecha {
+    //index y calendario. No se usa en paquetes
+    background-color: $color_fondo_card_fecha;
+    color: $color_card_fecha;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-left: -2rem;
+    border-radius: 5px;
+  }
+
+  .card__body__btn {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .card__individual {
+    width: 46%;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .card__individual {
+    width: 31%;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1439px) {
+  .card__individual {
+    width: 23%;
+    margin: 1rem;
+  }
+}
+
+.card__header {
+  //solapas: calendario y paquetes
+  background-color: $color_fondo_calenadrio_header;
+}
+
+.card__body {
+  background-color: $color_fondo_calenadrio_body;
+  padding: 0px;
+}
+
+.card-body {
+  z-index: 20; // para que me funcione el boton contacto en las card, posicione adelante
+}
