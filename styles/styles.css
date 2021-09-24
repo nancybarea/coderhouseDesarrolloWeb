@@ -528,7 +528,7 @@ header {
   text-align: center;
 }
 .main__login fieldset {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.25);
   color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
@@ -540,6 +540,7 @@ header {
 
 .login__formulario input {
   border: none;
+  border-radius: 5px;
 }
 .login__formulario label {
   display: block;
@@ -550,9 +551,25 @@ header {
   color: black;
 }
 
+.login__formulario__btn {
+  background-color: black;
+  color: white;
+}
+.login__formulario__btn:hover {
+  background-color: white;
+  color: black;
+}
+
 .section__login {
   text-align: center;
   padding-bottom: 3rem;
+}
+.section__login a {
+  text-decoration: none;
+  color: black;
+}
+.section__login a:hover {
+  font-weight: 700;
 }
 
 @media (min-width: 426px) {
